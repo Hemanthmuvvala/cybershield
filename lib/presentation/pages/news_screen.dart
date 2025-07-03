@@ -12,9 +12,20 @@ class _NewsScreenState extends State<NewsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(child: const Text('Cyber News',style:TextStyle(fontSize:25),)),
-        backgroundColor: const Color.fromARGB(255, 28, 159, 220),
+     appBar: AppBar(
+        backgroundColor: const Color(0xff0a0f1f),
+        title: const Center(
+          child: Text(
+            ' Cyber News',
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+             
+              color: Colors.cyanAccent,
+            ),
+          ),
+        ),
+        elevation: 0,
       ),
       body: Container(
         decoration: const BoxDecoration(

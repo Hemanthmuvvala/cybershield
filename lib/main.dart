@@ -1,5 +1,6 @@
 
-import 'package:cybershield/presentation/widgets/bn_navigator.dart';
+import 'package:cybershield/presentation/pages/splashscreen.dart';
+// import 'package:cybershield/presentation/widgets/bn_navigator.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const BnNavigator(),
+      home: const Splashscreen(),
     );
   }
 }

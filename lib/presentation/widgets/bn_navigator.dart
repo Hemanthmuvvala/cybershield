@@ -15,24 +15,26 @@ class BnNavigator extends StatefulWidget {
 
 class _BnNavigatorState extends State<BnNavigator> {
   final screens = [
-    const Homescreen(),
+   
     const NewsScreen(),
     const SafetyMeasure(),
+     const HomeScreen(),
     const ReportScreen(),
     const ProfileScreen(),
   ];
   int index = 2;
   final items = <Widget>[
-    const Icon(
-      Icons.home,
-      size: 30,
-    ),
+   
     const Icon(
       Icons.newspaper,
       size: 30,
     ),
     const Icon(
       Icons.shield,
+      size: 30,
+    ),
+     const Icon(
+      Icons.home,
       size: 30,
     ),
     const Icon(
@@ -53,7 +55,7 @@ class _BnNavigatorState extends State<BnNavigator> {
         children: screens,
       ),
       bottomNavigationBar: CurvedNavigationBar(
-        color:  Color.fromARGB(255, 28, 159, 220),
+        color:  const Color.fromARGB(255, 28, 159, 220),
         buttonBackgroundColor: const Color.fromARGB(255, 119, 251, 92),
         backgroundColor: Colors.transparent,
         animationDuration: const Duration(milliseconds: 500),

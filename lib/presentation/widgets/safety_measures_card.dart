@@ -10,8 +10,8 @@ class SafetyMeasuresCard extends StatefulWidget {
 class _SafetyMeasuresCardState extends State<SafetyMeasuresCard> {
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: const Color.fromARGB(255, 91, 177, 247),
+    return const Card(
+      color: Color.fromARGB(255, 91, 177, 247),
       child: ExpansionTile(
         title: Text('Phishing'),
         children: [

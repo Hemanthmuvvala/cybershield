@@ -60,7 +60,7 @@ class NewsCard extends StatelessWidget {
                       child:  Center(
                         child: Text(
                           avatar,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 10,

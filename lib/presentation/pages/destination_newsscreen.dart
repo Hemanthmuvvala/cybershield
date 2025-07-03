@@ -20,7 +20,7 @@ class DestinationNewsscreen extends StatelessWidget {
    
       appBar: AppBar(title: Text(source)),
       body: SingleChildScrollView(
-      padding:EdgeInsets.all(8),
+      padding:const EdgeInsets.all(8),
 
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

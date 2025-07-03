@@ -1,3 +1,4 @@
+import 'package:cybershield/presentation/pages/report_screen.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -10,7 +11,6 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   bool _notificationsEnabled = true;
   bool _biometricsEnabled = false;
-  
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +63,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      
+
                       // User Name
                       const Text(
                         'Hemanth',
@@ -74,7 +74,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ),
                       ),
                       const SizedBox(height: 8),
-                      
+
                       // User Email
                       Text(
                         'hemanthmuvvala@gmail.com',
@@ -84,7 +84,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      
+
                       // Security Status Badge
                       Container(
                         padding: const EdgeInsets.symmetric(
@@ -130,7 +130,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ],
                   ),
                 ),
-                
+
                 // Settings Cards
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -163,12 +163,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               });
                             },
                           ),
-                         
                         ],
                       ),
-                      
+
                       const SizedBox(height: 16),
-                      
+
                       // Account Settings
                       _buildSettingsCard(
                         title: 'Account Settings',
@@ -200,9 +199,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                         ],
                       ),
-                      
+
                       const SizedBox(height: 16),
-                      
+
                       // App Settings
                       _buildSettingsCard(
                         title: 'App Settings',
@@ -213,7 +212,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             subtitle: 'Get help and contact support',
                             icon: Icons.help_outline,
                             onTap: () {
-                              // Navigate to help
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (ctx) => const ReportScreen()));
                             },
                           ),
                           _buildActionTile(
@@ -234,9 +236,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                         ],
                       ),
-                      
+
                       const SizedBox(height: 24),
-                      
+
                       // Logout Button
                       Container(
                         width: double.infinity,
@@ -288,7 +290,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                         ),
                       ),
-                      
+
                       const SizedBox(height: 24),
                     ],
                   ),
@@ -358,8 +360,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ],
             ),
           ),
-          
-        
+
           ...children,
         ],
       ),
