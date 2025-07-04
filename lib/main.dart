@@ -1,5 +1,4 @@
-
-import 'package:cybershield/presentation/pages/splashscreen.dart';
+import 'package:cybershield/provider/provider_screens/first_screen.dart';
 // import 'package:cybershield/presentation/widgets/bn_navigator.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Splashscreen(),
+      home: const FirstScreen(),
     );
   }
 }
