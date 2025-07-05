@@ -1,5 +1,4 @@
 import 'package:cybershield/provider/provider_screens/first_screen.dart';
-// import 'package:cybershield/presentation/widgets/bn_navigator.dart';
 import 'package:flutter/material.dart';
 
 void main() {
